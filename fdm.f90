@@ -33,7 +33,7 @@ implicit none
     ! preparação para salvar os dados e descrever o programa
     ! ==================================================================
 	
-	open(unit=10, file='resultados.dat', status='replace')
+	open(unit=10, file='results.dat', status='replace')
 	write(10, *) " Simulação de Onda - Barra Elástica"
 	write(10, *) " dx = ", dx, " dt = ", dt, " CFL = ", cfl
 	write(10, *) " N = ", N, " nt = ", nt
@@ -102,6 +102,7 @@ implicit none
 	
 	! fechando o arquivo dat que tá aberto escrevendo resultados
 	close(10)
-	print *, "Dados salvos em 'resultados.dat'"
+	print *, "Dados salvos em 'results.dat'"
     
+
 end program diferencasFinitas
