@@ -52,7 +52,7 @@ def process_data(file_path):
     return all_data
 
 # --- 2. Geração da Animação ---
-def create_animation(processed_data, gif_filename="simulacao_onda_elastica.gif"):
+def create_animation(processed_data, gif_filename="1d-wave-eq_30ms.gif"):
     """Cria e salva a animação GIF a partir dos dados processados."""
     if not processed_data:
         return
@@ -118,4 +118,5 @@ if __name__ == '__main__':
     if data:
         create_animation(data)
     else:
+
         print("Falha na execução. Não foi possível gerar a animação. Verifique a saída do processamento.")
